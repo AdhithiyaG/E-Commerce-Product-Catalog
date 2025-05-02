@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 const PORT = process.env.PORT || 4000;
 
 app.use('/graphql', graphqlHTTP({
-  schema,
+  schema: schema,
   graphiql: true,
 }));
 

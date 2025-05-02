@@ -8,10 +8,10 @@ const ProductType = new GraphQLObjectType({
   name: 'Product',
   fields: () => ({
     id: { type: GraphQLID },
-    name: { type: GraphQLNonNull(GraphQLString) },
+    name: { type: new GraphQLNonNull(GraphQLString) },
     description: { type: GraphQLString },
-    price: { type: GraphQLNonNull(GraphQLFloat) },
-    category: { type: GraphQLNonNull(GraphQLString) },
+    price: { type: new GraphQLNonNull(GraphQLFloat) },
+    category: { type: new GraphQLNonNull(GraphQLString) },
     brand: { type: GraphQLString },
     rating: { type: GraphQLFloat },
     createdAt: { type: GraphQLString },
@@ -22,10 +22,10 @@ const ProductType = new GraphQLObjectType({
 const ProductInput = new GraphQLInputObjectType({
   name: 'ProductInput',
   fields: {
-    name: { type: GraphQLNonNull(GraphQLString) },
+    name: { type: new GraphQLNonNull(GraphQLString) },
     description: { type: GraphQLString },
-    price: { type: GraphQLNonNull(GraphQLFloat) },
-    category: { type: GraphQLNonNull(GraphQLString) },
+    price: { type: new GraphQLNonNull(GraphQLFloat) },
+    category: { type: new GraphQLNonNull(GraphQLString) },
     brand: { type: GraphQLString },
     rating: { type: GraphQLFloat },
   }
