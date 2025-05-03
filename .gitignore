@@ -141,3 +141,8 @@ node_modules/
 # Logs
 logs
 *.log
+
+# Replit AI assistant/checkpoint files
+.replit
+replit.nix
+.replit-checkpoints/
