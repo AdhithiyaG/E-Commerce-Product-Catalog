@@ -131,3 +131,13 @@ dist
 
 # Replit debugger
 .breakpoints
+
+# Node dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
